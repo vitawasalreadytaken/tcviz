@@ -1,9 +1,7 @@
 # tcviz 1.2
 #
-# $Id: Node.py 41 2009-12-28 19:37:51Z zephyr $
-#
 # Licensed under the terms of the MIT/X11 license.
-# Copyright (c) 2009 Vita Smid <me@ze.phyr.us>
+# Copyright (c) 2009-2013 Vita Smid <http://ze.phyr.us>
 
 
 import textwrap

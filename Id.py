@@ -1,9 +1,7 @@
 # tcviz 1.2
 #
-# $Id: Id.py 44 2012-10-08 09:32:14Z zephyr $
-#
 # Licensed under the terms of the MIT/X11 license.
-# Copyright (c) 2012 Vita Smid <me@ze.phyr.us>
+# Copyright (c) 2009-2013 Vita Smid <http://ze.phyr.us>
 
 
 class Id:
