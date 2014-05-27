@@ -50,7 +50,7 @@ class Node:
 
 
 	def getNodeSpec(self):
-		desc = '<br/>'.join(textwrap.wrap(' '.join(self.__params), 30))
+		desc = '<br/>'.join(textwrap.wrap(' '.join(self.__params), 30)) or ' '
 		label = '<font color="blue">%s</font><br/>%s<br/><font point-size="10">%s</font>' % (self.__id, self.__type, desc)
 		shape = 'box' if self.__nodeType == 'qdisc' else 'ellipse'
 		return '"%s" [ label = <%s>, shape = "%s" ];' % (self.__id, label, shape)
