@@ -11,9 +11,13 @@ for more information.
 Requirements
 ------------
 
-* 2.5 &le; Python &lt; 3.0
+* 3.0 &le; Python
 * [Graphviz](http://www.graphviz.org)
 
+How to use
+----------
+
+`./tcviz.py eth0 | dot -Tpng > tc.png`
 
 Examples
 --------
