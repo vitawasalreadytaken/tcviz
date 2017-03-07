@@ -5,21 +5,10 @@
 
 
 class Id:
-	def __init__(self, spec = '1:0'):
-		(self.__major, self.__minor) = map(self.__parseId, spec.split(':'))
+    def __init__(self, spec='1:0'):
+        (self._major, self._minor) = spec.split(':')
 
+    def __str__(self):
+        return '%s:%s' % (self._major, self._minor)
 
-	def __parseId(self, id):
-		'''Parse a major or minor number.'''
-		if not id:
-			return 0
-		else:
-			return int(id, 16)
-
-
-	def __str__(self):
-		return '%x:%x' % (self.__major, self.__minor)
-
-
-	__unicode__ = __repr__ = __str__
-
+    __unicode__ = __repr__ = __str__
