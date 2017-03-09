@@ -45,3 +45,8 @@ tcviz is able to turn something like this:
 into something like this:
 
 ![tcviz-generated graph example](https://raw.github.com/ze-phyr-us/tcviz/master/example.png)
+
+Contributors
+--------
+
+Stefan Forstenlechner ([t-h-e](https://github.com/t-h-e)) stefanforstenlechner@gmail.com
