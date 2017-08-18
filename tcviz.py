@@ -59,7 +59,7 @@ def parse(string, constructor):
     for line in string.split('\n'):
         if not line:
             continue
-        elif line[:2] == '  ':  # continuation of the previous line
+        elif line.startswith(' ') or line.startswith('\t'):  # continuation of the previous line
             specs[-1] += ' ' + line.strip()
         else:
             specs.append(line.strip())
