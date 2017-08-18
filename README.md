@@ -1,3 +1,4 @@
+
 tcviz
 =====
 
@@ -49,4 +50,5 @@ into something like this:
 Contributors
 --------
 
-Stefan Forstenlechner ([t-h-e](https://github.com/t-h-e)) stefanforstenlechner@gmail.com
+* Stefan Forstenlechner ([t-h-e](https://github.com/t-h-e)) stefanforstenlechner@gmail.com
+* [@qnnnnez](https://github.com/qnnnnez)
