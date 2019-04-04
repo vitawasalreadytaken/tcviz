@@ -8,6 +8,7 @@
 
 import subprocess
 import sys
+from itertools import chain
 
 from Filter import Filter
 from Node import Node
@@ -29,7 +30,7 @@ def main():
     classes = parse(c, Node)
 
     if len(sys.argv) == 2:
-        f = '\n'.join([readTc(['filter', 'show', 'dev', sys.argv[1], 'parent', str(cur._id)]).replace('filter', 'filter parent {}'.format(cur._id)) for cur in qdiscs])
+        f = '\n'.join([readTc(['filter', 'show', 'dev', sys.argv[1], 'parent', str(cur._id)]).replace('filter', 'filter parent {}'.format(cur._id)) for cur in chain(qdiscs, classes)])
 
     filters = parse(f, Filter)
 
