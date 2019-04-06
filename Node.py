@@ -6,6 +6,7 @@
 
 import textwrap
 
+from Filter import Filter
 from Id import Id
 
 
@@ -53,6 +54,11 @@ class Node:
         return '"%s" [ label = <%s>, shape = "%s" ];' % (self._id, label, shape)
 
     def getEdgeSpec(self):
-        if self._parent is None:
-            return ''
-        return '"%s" -> "%s" [ arrowhead = "none", arrowtail = "normal"];' % (self._parent, self._id)
+        ret = ''
+        if self._parent:
+            ret = '"%s" -> "%s" [ arrowhead = "none", arrowtail = "normal"];' % (self._parent, self._id)
+
+        if self._nodeType == 'qdisc' and 'default' in self._params:
+            dcls_minor = self._params[self._params.index('default') + 1].lstrip('0x')
+            ret += '\n' + Filter('  {0}: default classid {0}:{1}'.format(self._id._major, dcls_minor)).getEdgeSpec()
+        return ret
