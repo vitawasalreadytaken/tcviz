@@ -2,6 +2,8 @@
 tcviz
 =====
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 **tcviz** is a script that can visualize your Linux traffic control (TC) configurations.
 Qdiscs, classes, filters, you name it. The program has been first introduced on
 [my blog](http://ze.phyr.us). Please read
