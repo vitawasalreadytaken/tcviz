@@ -27,7 +27,9 @@ class Filter:
         while spec:
             item = spec.pop(0)
             if item == 'classid' or item == 'flowid':
-                self.__target = Id(spec.pop(0))
+                idval = spec.pop(0)
+                if idval != "???":
+                  self.__target = Id(idval)
             else:
                 self.__params.append(item)
 
