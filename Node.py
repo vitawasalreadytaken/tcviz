@@ -56,7 +56,7 @@ class Node:
     def getEdgeSpec(self):
         ret = ''
         if self._parent:
-            ret = '"%s" -> "%s" [ arrowhead = "none", arrowtail = "normal"];' % (self._parent, self._id)
+            ret = '"%s" -> "%s" [ arrowhead = "none", arrowtail = "normal", dir = "both"];' % (self._parent, self._id)
 
         if self._nodeType == 'qdisc' and 'default' in self._params:
             dcls_minor = self._params[self._params.index('default') + 1].lstrip('0x')
