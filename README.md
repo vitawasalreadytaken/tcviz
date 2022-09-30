@@ -22,6 +22,10 @@ How to use
 
 `./tcviz.py eth0 | dot -Tpng > tc.png`
 
+or
+
+`./tcviz.py <qdiscs file> <classes file> <filters file> | dot -Tpng > tc.png`
+
 Examples
 --------
 
